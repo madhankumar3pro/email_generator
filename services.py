@@ -23,14 +23,13 @@ class IntentAndEmailPredictor:
         nltk.download('stopwords')
         self.STOP_WORDS = set(stopwords.words('english'))
 
-        self.pipeline = None
         # Load the model pipeline synchronously
-        # self.pipeline = transformers.pipeline(
-        #     "text-generation",
-        #     model = model_id,
-        #     model_kwargs={"torch_dtype": torch.bfloat16},
-        #     device_map="auto",
-        # )
+        self.pipeline = transformers.pipeline(
+            "text-generation",
+            model = model_id,
+            model_kwargs={"torch_dtype": torch.bfloat16},
+            device_map="auto",
+        )
         
          
     def clean_text(self, text):
