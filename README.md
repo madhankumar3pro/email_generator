@@ -43,4 +43,4 @@ GPU: 15.3GB
 
 API FLOW:
 
-USER  --->  Middleware ---> API --->validate inputs --->intent_prompt_generation --->intent_classification  ----->exctract_url_pages_content  ---->email_propmt_generation----> email_prediction
+USER  --->  Middleware ---> API --->validate inputs --->intent_prompt_generation --->intent_classification  ----->exctract_url_pages_content  ---->email_propmt_generation    ---->email_prediction
